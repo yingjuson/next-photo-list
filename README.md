@@ -1,8 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a simple application that displays a list of images from https://jsonplaceholder.typicode.com/photos in a Grid View, utilizing React Query's [useInfiniteQuery](https://tanstack.com/query/v4/docs/framework/react/guides/infinite-queries) for infinite scrolling and [Next.js' Image](https://nextjs.org/docs/pages/building-your-application/optimizing/images) component built-in optimization features.
 
 ## Getting Started
 
-First, run the development server:
+I used Node v21.7.3 when creating this project. You can check the Node version installed in your machine by running this:
+
+```bash
+node -v
+```
+
+The first step is to install the dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+Then run the app
 
 ```bash
 npm run dev
@@ -10,27 +26,28 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To build the app, run
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npm run build
+```
 
-## Learn More
+And enter this to run the build locally
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Lastly, for running the tests
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+npm run tests
+```
 
-## Deploy on Vercel
+## Deployed Version
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+You can also check out the [deployed version](https://next-photo-list.vercel.app) in Vercel.
