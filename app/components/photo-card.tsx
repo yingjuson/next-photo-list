@@ -9,11 +9,11 @@ import {
   CardTitle,
 } from "../../components/ui/card";
 
-const PhotoCard: FC<IPhoto> = ({ id, title, url, thumbnailUrl }) => {
+const PhotoCard: FC<IPhoto> = ({ id, title, url }) => {
   const [src, setSrc] = useState(url);
 
   return (
-    <Card className="shadow-md max-w-80 h-[22rem]">
+    <Card className="shadow-md max-h-96 max-w-80">
       <CardHeader>
         <CardTitle>{`#${id}`}</CardTitle>
         <CardDescription className="truncate">{title}</CardDescription>
@@ -24,7 +24,7 @@ const PhotoCard: FC<IPhoto> = ({ id, title, url, thumbnailUrl }) => {
           alt={title}
           src={src}
           width={250}
-          height={300}
+          height={250}
           onError={() => setSrc("https://placehold.co/250")}
         />
       </CardContent>
