@@ -18,6 +18,8 @@ const SearchInput = () => {
   return (
     <div className="fixed top-0 h-16 w-full flex justify-center items-center gap-2 bg-transparent/20">
       <Input
+        id="search-input"
+        data-testid="search-input"
         className="w-56 md:w-72 rounded-lg"
         placeholder="Enter search keyword"
         onChange={handleInputChange}

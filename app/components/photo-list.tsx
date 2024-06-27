@@ -54,7 +54,11 @@ const PhotoList = () => {
   );
 
   return (
-    <ul className="container w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 min-w-72">
+    <ul
+      id="photolist-container"
+      data-testid="photolist-container"
+      className="container w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 min-w-72"
+    >
       {filteredPhotos?.map((photo: IPhoto, index: number) => {
         const isLastCard = filteredPhotos.length === index + 1;
 
