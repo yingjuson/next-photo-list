@@ -25,7 +25,7 @@ const PhotoCard: FC<IPhoto> = ({ id, title, url }) => {
           src={src}
           width={250}
           height={250}
-          onError={() => setSrc("https://placehold.co/250")}
+          onError={() => setSrc("/fallback-img.svg")}
         />
       </CardContent>
     </Card>
